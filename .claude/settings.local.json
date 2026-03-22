@@ -6,7 +6,17 @@
       "Bash(npm audit:*)",
       "Bash(npx prisma:*)",
       "Bash(npx vitest:*)",
-      "mcp__playwright"
+      "mcp__playwright",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(curl -sL https://github.com/cli/cli/releases/latest/download/gh_2.67.0_macOS_arm64.zip -o /tmp/gh.zip)",
+      "Bash(unzip -o /tmp/gh.zip -d /tmp/gh)",
+      "Read(//tmp/**)",
+      "Bash(mkdir -p ~/bin)",
+      "Bash(cp /tmp/gh-extracted/gh_2.67.0_macOS_amd64/bin/gh ~/bin/gh)",
+      "Bash(chmod +x ~/bin/gh)",
+      "Bash(export PATH=\"$HOME/bin:$PATH\")",
+      "Bash(gh --version)"
     ]
   }
 }
